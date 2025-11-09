@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fbfaf6;
+    color: #000;
+    line-height: 1.5;
+}
+
+/* Onda superior */
+.wave-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    z-index: 0;
+}
+
+
+/* Container principal */
+.container {
+    margin: 0 auto;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: flex-start;
+
+}
+.logo {
+    width: 2px;
+    padding: 5px 8px;
+    border-radius: 10px;
+    z-index: 1;
+
+}
+
+
+.logo img{
+    width: 150px;
+    margin-left: 100px;
+    margin-top: 40px;  
+}
+
+.image img{
+    border-radius:80px;
+    width:500px;
+}
+
+.image-person img{
+    border-radius:80px;
+    width:300px;
+}
+
+/* Estrutura geral */
+
+.section {
+    background-color: #ffffff;
+    padding-top: 200px;
+    padding-bottom: 150px;
+    padding-left: 80px;
+    padding-right: 100px;
+}
+
+.section h2 {
+    color: #72a888;
+    margin-bottom: 50px;
+    font-size: 20px;
+}
+.section p {
+    font-size: 20px;
+}
+.audio {
+    margin-left: 10px;
+}
+
+.learn-section {
+    top:0;
+    background-color: #ecdaae;
+    justify-items: end;
+
+}
+
+.learn-section p{
+    text-align: right;
+    margin-left: 700px;
+}
+
+.icon {
+    width: 35px;
+    
+}
+
+.section .title {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 100px; 
+}
+
+.section .title-guide {
+    font-size: 50px;
+    margin-bottom: 100px; 
+}
+
+.section .title-two{
+    font-size: 50px;
+    margin-bottom: 100px; 
+}
+
+/* Layout de duas colunas */
+
+
+.two-col {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+    align-items: start;
+
+}
+
+
+
+/* Grid de três colunas */
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 80px;
+}
+
+/* Cartões e fotos */
+
+.card {
+    background-color: #c8dcaa;
+    border: 1px solid #ecdaae;
+    border-radius: 30px;
+    padding: 70px;
+    text-align: center;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.genius-card {
+    text-align: center;
+}
+
+.genius-card p{
+    margin-top: 25px;
+    font-style: italic;
+}
+
+.genius h2{
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 100px; 
+ 
+}
+
+/*GUIA*/
+
+.two-col p{
+    margin-top: 50px;
+    padding: 25px;
+    padding-left: 10px;
+}
+
+.pdf{
+    width: 600px;
+    height: 600px;
+ 
+}
+
+.facts {
+      background-color: #e9f1dd;
+}
+
+.guide {
+      background-color: #e9f1dd;
+}
+
+
+/* Footer */
+
+.footer {
+    background-color: #ecdaae;
+    display: flex;
+    justify-content: end;
+}
+
+.emblem img{
+    width: 300px;
+    margin: 60px 60px 60px 60px;
+}
+
+
+/* Responsividade */
+
+@media (max-width: 900px) {
+
+.two-col, .grid-3 {
+        grid-template-columns: 1fr;
+    }
+.container {
+        padding: 140px 0px 40px;
+    }
+
+.learn-section p{
+    text-align: right;
+    margin-left: 200px;
+}
+
+    .section .title {
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 80px; 
+    margin-top: 30px;
+}
+
+.section .title-guide {
+    font-size: 35px;
+    margin-bottom: 80px; 
+    margin-top: 30px;
+}
+
+.section .title-two{
+    font-size: 35px;
+    margin-bottom: 80px; 
+    margin-top: 30px;
+}
+
+.section p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.genius h2{
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 80px; 
+    margin-top: 20px;
+}
+   .section p {
+    font-size: 16px;
+   }
+    .section {
+        padding: 20px;
+    }
+    .logo {
+        font-size: 22px;
+    }
+
+    
+    .pdf{
+        justify-self: center;
+        width:300px;
+        height:300px;
+    }
+}
+
